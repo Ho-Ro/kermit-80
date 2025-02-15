@@ -1,4 +1,4 @@
-	title	'MLOAD MULTI-FILE HEX LOAD UTILITY'
+;	title	'MLOAD MULTI-FILE HEX LOAD UTILITY'
 ;
 ;		*********************************
 ;		*	   MLOAD.ASM		*
