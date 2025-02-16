@@ -262,14 +262,14 @@ ovladr	EQU	7000H		; [18] address = 6c00h for Kermit v4.10
 
 cpsker	EQU	FALSE		; building the system-dependent part...
 
-; SET some options to FALSE, then SET  them TRUE if needed
+; SET these options to FALSE, then SET them TRUE if needed later
 iobyt	SET	FALSE		;assume we dont want IOBYTE..
 inout	SET	FALSE		;... or IN/OUT code
 termin	SET	FALSE		; we are not using a terminal
 ; Also set the CPU speed to a default 2.0 Mhz
-cpuspd	SET	20		; default to 2 Mhz, in case we dont know
+cpuspd	SET	40		; HORO: default to 4 Mhz, in case we dont know
 ; Assume kit is Z80 based, and set z80 false for non z80 systems.
-;z80	SET	TRUE
+z80	SET	TRUE		; HORO: It's a Z80 system
 
 ;Which CP/M system hardware are we building KERMIT-80 for?
 ;One of the following should be TRUE, the rest FALSE:
@@ -348,7 +348,7 @@ ap6850	EQU	FALSE		;[14] Apple with 6850 ACIA in serial interface
 				;[14] e.g PACT, SSM AIO, Aristocard
 apcps	EQU	FALSE		;[9] Apple with CP multifunction card
 cpc	EQU	FALSE		; Amstrad CPC CP/M Plus computers
-cpm3	EQU	FALSE		;"Generic" Kermit-80 for CP/M 3.0 (CP/M Plus)
+cpm3	EQU	TRUE		;HORO: "Generic" Kermit-80 for CP/M 3.0 (CP/M Plus)
 				; (terminal required)
 lobo	EQU	FALSE		;Lobo Max-80
 osi	EQU	FALSE		;For Ohio Scientific.
@@ -378,7 +378,7 @@ tvi912	EQU	FALSE		;[10] TVI912/920
 tvi925	EQU	FALSE		;TVI925 Display
 				; (works for Freedom 100 also)  [Toad Hall]
 vt52	EQU	FALSE		;VT52 or equivalent (or H19)
-vt100	EQU	FALSE		;VT100 or equivalent
+vt100	EQU	TRUE		;HORO: VT100 or equivalent
 wyse	EQU	FALSE		;Wyse 100 terminal
 ;
 ; Several systems are basically the same, with very slight variations,

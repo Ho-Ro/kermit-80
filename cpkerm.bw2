@@ -123,7 +123,6 @@ File 2)	DSKE:CPSPK2.ASM[10,50,KERMIT,CPM,HP125]	created: 2259 27-Aug-89
 2)1		lxi	d,fnbuf		;[MF]Point to string
 2)		call	prtstr		; write string to console
 **************
-
 
 I may be reached on BITNET by E-mail to mailer@uwalocke with the subject-line
 containing the phrase <dec10%"bpa">.
