@@ -1357,7 +1357,7 @@ IF lasm and termin	; if no terminal, no need to link
 LINK CPXVDU.ASM
 ENDIF	; lasm and termin
 
-ovlend	EQU	$
+ovlend	SET	$	; HORO: EQU -> SET to fix M80 error M
 
 IF lasm
 	END	; If m80 then this ignored

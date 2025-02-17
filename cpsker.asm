@@ -266,8 +266,8 @@ debug	equ	FALSE	; set false for running system.  True => does some
 ; Assembler type.  Define the appropriate one TRUE, the rest FALSE.  (We can't
 ; use ASM, because it cannot handle multiple input files)
 mac80	EQU	FALSE		; For assembly via MAC80 cross-assembler.
-m80	EQU	false		; For assembly via Microsoft's M80.
-lasm	EQU	true		; For assembly via LASM, a public-domain
+m80	EQU	TRUE		; HORO: For assembly via Microsoft's M80.
+lasm	EQU	FALSE		; For assembly via LASM, a public-domain
 				; assembler.
 ;
 ;       Get the other modules...

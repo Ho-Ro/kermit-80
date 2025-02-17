@@ -1,0 +1,3 @@
+*.asm text eol=crlf
+*.rel binary
+*.hex text eol=crlf

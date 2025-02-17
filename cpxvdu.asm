@@ -455,7 +455,7 @@ ENDIF;wyse
 
 
 
-ovlend	equ	$	; End of overlay
+ovlend	set	$	; HORO: EQU -> SET to fix M80 error M
 
 IF lasm		;Not really needed, as M80 ignores END in include files
 	END

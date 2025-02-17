@@ -248,8 +248,8 @@ TRUE	EQU	NOT FALSE
 ; Assembler type.  Define the appropriate one TRUE, the rest FALSE.  (We can't
 ; use ASM, because it cannot handle multiple input files)
 mac80	EQU	FALSE		; For assembly via MAC80 cross-assembler.
-m80	EQU	FALSE		; For assembly via Microsoft's M80.
-lasm	EQU	TRUE		; For assembly via LASM, a public-domain
+m80	EQU	TRUE		; HORO: For assembly via Microsoft's M80.
+lasm	EQU	FALSE		; For assembly via LASM, a public-domain
 				; assembler.
 ;
 ;       Address at which the overlay should be loaded.  This will not
