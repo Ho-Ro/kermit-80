@@ -2,6 +2,8 @@
 This is the [source code](http://www.columbia.edu/kermit/ftp/archives/cpm80.tar.gz)
 from the
 [Kermit Software Source Code Archive](https://www.columbia.edu/kermit/archive.html).
+**Kermit 80** was one of the original Kermit programs, first written in 1981 for the
+Intertec Superbrain and then made portable to many other CP/M systems.
 
 ## Setup
 The source code is customised to create a ‘kermit.com’ for **Generic CP/M Plus**

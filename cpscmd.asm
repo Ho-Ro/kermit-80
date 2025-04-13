@@ -22,6 +22,7 @@
 ;
 ; revision history (latest first):
 ;
+;edit 5b, 13-Apr-2025 by Ho-Ro. Allow '_' in file names again.
 ;edit 13, 17-Jan-1991 by MF. Modified "cmifil" routine to zero the entire
 ;	fcb (not just the extent) to fix a bug in the COPY command which
 ;	prevented successive COPY commands from working properly.
@@ -892,8 +893,8 @@ cmifi7:	cpi	'!'             ;[pcc007] control chr or space?
 	jm	cmifi8		;[pcc007]
 	cpi	']'+1           ;[pcc007]
 	jm	cmifi9		;[pcc007]
-	cpi	'_'             ;[5]
-	jz	cmifi9		;[5] (If I was doing CP/M, I would have
+	;cpi	'_'             ;[5a] Why not? [5]
+	;jz	cmifi9		;[5a] [5] (If I was doing CP/M, I would have
 	cpi	'|'             ;[5]  just eliminated all them funny chars
 	jz	cmifi9		;[5]  instead of a random selection)
 cmif7a:				;[5]

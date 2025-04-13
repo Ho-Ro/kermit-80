@@ -19,7 +19,7 @@ OVLADR=7000
 # The system-independent files:
 KERMITASM=cpsker.asm cpsdef.asm cpsmit.asm cpscom.asm cpspk1.asm	\
 	  cpspk2.asm cpsrem.asm cpsser.asm cpstt.asm  cpscpm.asm	\
-	  cpswld.asm cpscmd.asm cpsutl.asm cpsdat.asm			\
+	  cpswld.asm cpscmd.asm cpsutl.asm cpsdat.asm
 
 
 # The system-dependent files
